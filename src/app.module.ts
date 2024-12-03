@@ -1,9 +1,17 @@
 import { Module } from '@nestjs/common';
+// import { ServeStaticModule } from '@nestjs/serve-static';
 import { ApiModule } from './api/api.module';
 import { AppService } from './app.service';
+// import { join } from 'path';
 
 @Module({
-    imports: [ApiModule],
+    imports: [
+        // ServeStaticModule.forRoot({
+        //     rootPath: join(__dirname, '..', 'images'),
+        //     exclude: ['/api/(.*)']
+        // }),
+        ApiModule
+    ],
     controllers: [],
     providers: [AppService],
     exports: [AppService]
