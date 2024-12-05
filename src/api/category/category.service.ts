@@ -13,7 +13,7 @@ export class CategoryService {
         this._appService.dbPost('categories', { id, ...category, icon: '' }, 'name');
         const icon = base64 ? this._appService.createImage(base64, `categories/${id}`) : category.icon;
         this._appService.dbPut('categories', id, { icon });
-        return { id };
+        return { id, ...category, icon };
     }
     public async putCategory(id: string, category, base64: string) {
         this._appService.dbPut('categories', id, category);

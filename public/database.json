@@ -1,6 +1,17 @@
 {
-    "categories": [],
-    "subcategories": [],
-    "products": [],
-    "carts": []
+	"categories": [
+		{
+			"id": "cdfa-catc97-4739-9274160",
+			"name": "Молочный отдел",
+			"icon": "images/categories/cdfa-catc97-4739-9274160.png"
+		},
+		{
+			"id": "5e58-cate05-436b-b148241",
+			"name": "Рыбный отдел",
+			"icon": "images/categories/5e58-cate05-436b-b148241.png"
+		}
+	],
+	"subcategories": [],
+	"products": [],
+	"carts": []
 }
