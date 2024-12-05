@@ -22,4 +22,9 @@ export class CategoryService {
         }
         return { ok: true };
     }
+    public async deleteCategory(id: string) {
+        this._appService.dbDelete('categories', id);
+        this._appService.deleteImage(`categories/${id}`);
+        return { ok: true };
+    }
 }

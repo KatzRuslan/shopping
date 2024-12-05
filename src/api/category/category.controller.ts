@@ -17,8 +17,8 @@ export class CategoryController {
     async putCategory(@Param('id') id: string, @Body() { category, base64 }) {
         return this._categoryService.putCategory(id, category, base64);
     }
-    @Delete()
-    async deleteCategory() {
-        return this._categoryService.getCategories();
+    @Delete(':id')
+    async deleteCategory(@Param('id') id: string) {
+        return this._categoryService.deleteCategory(id);
     }
 }

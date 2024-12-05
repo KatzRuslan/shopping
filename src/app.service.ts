@@ -21,7 +21,7 @@ export class AppService {
     public dbPost<T>(key: string, node: T, check = 'name') {
         const dataBase = this._readDataBase();
         if (dataBase[key].find((item) => item[check] === node[check])) {
-            throw new HttpException({ header: 'Error', message: `"${node[check]}" allready exist in "${key}"` }, 400);
+            throw new HttpException({ header: 'Error', message: `"${node[check]}" already exist in "${key}"` }, 400);
         }
         dataBase[key].push(node);
         this._writeDataBase(dataBase);
@@ -29,13 +29,20 @@ export class AppService {
     }
     public dbPut<T>(key: string, id: string, node: T | any, check = 'name') {
         const dataBase = this._readDataBase();
-        if (dataBase[key].find((item) => item[check] === node[check] && item.id !== node.id)) {
-            throw new HttpException({ header: 'Error', message: `"${node[check]}" allready exist in "${key}"` }, 400);
+        if (node[check] && dataBase[key].find((item) => item[check] === node[check] && item.id !== id)) {
+            throw new HttpException({ header: 'Error', message: `"${node[check]}" already exist in "${key}"` }, 400);
         }
         const list = dataBase[key];
         dataBase[key] = list;
         const nodeIndex = list.findIndex((item) => item.id === id);
         list[nodeIndex] = { ...list[nodeIndex], ...node };
+        this._writeDataBase(dataBase);
+        return true;
+    }
+    public dbDelete(key: string, id: string) {
+        const dataBase = this._readDataBase();
+        const list = dataBase[key].filter((node) => node.id !== id);
+        dataBase[key] = list;
         this._writeDataBase(dataBase);
         return true;
     }
@@ -61,5 +68,11 @@ export class AppService {
         const filepath = join(__dirname, '../', filename);
         fs.writeFileSync(filepath, buffer);
         return filename;
+    }
+    deleteImage(name: string) {
+        const filename = `images/${name}.png`;
+        const filepath = join(__dirname, '../', filename);
+        fs.unlinkSync(filepath);
+        return true;
     }
 }
