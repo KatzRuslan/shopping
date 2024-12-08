@@ -11,7 +11,14 @@
 			"icon": "images/categories/5e58-cate05-436b-b148241.png"
 		}
 	],
-	"subcategories": [],
+	"subcategories": [
+		{
+			"id": "asub-category-415a-8e9abd6",
+			"name": "Мягкие сыры",
+			"categoryId": "cdfa-catc97-4739-9274160",
+			"icon": ""
+		}
+	],
 	"products": [],
 	"carts": []
 }

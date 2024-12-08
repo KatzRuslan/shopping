@@ -9,15 +9,15 @@ export class SubcategoryController {
         return this._subcategoryService.getSubcategories();
     }
     @Post()
-    async postSubcategory(@Body() { subcategory, base64 }) {
-        return this._subcategoryService.postSubcategory(subcategory, base64);
+    async postSubcategory(@Body() { subcategory }) {
+        return this._subcategoryService.postSubcategory(subcategory);
     }
     @Put(':id')
-    async putSubcategory(@Param('id') id: string, @Body() { subcategory, base64 }) {
-        return this._subcategoryService.putSubcategory(id, subcategory, base64);
+    async putSubcategory(@Param('id') id: string, @Body() { subcategory }) {
+        return this._subcategoryService.putSubcategory(id, subcategory);
     }
-    @Delete()
-    async deleteSubcategory() {
-        return this._subcategoryService.getSubcategories();
+    @Delete(':id')
+    async deleteSubcategory(@Param('id') id: string) {
+        return this._subcategoryService.deleteSubcategory(id);
     }
 }
