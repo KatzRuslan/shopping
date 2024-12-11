@@ -9,6 +9,26 @@
 			"id": "5e58-cate05-436b-b148241",
 			"name": "Рыбный отдел",
 			"icon": "images/categories/5e58-cate05-436b-b148241.png"
+		},
+		{
+			"id": "d58c-cat0bc-4f4a-a154f8f",
+			"name": "Гигиена и уход",
+			"icon": "images/categories/d58c-cat0bc-4f4a-a154f8f.png"
+		},
+		{
+			"id": "a272-cat3fe-4d9b-9d11a1b",
+			"name": "Мучные изделия",
+			"icon": "images/categories/a272-cat3fe-4d9b-9d11a1b.png"
+		},
+		{
+			"id": "b084-cat917-425a-a02b5a5",
+			"name": "Для животных",
+			"icon": "images/categories/b084-cat917-425a-a02b5a5.png"
+		},
+		{
+			"id": "4b35-cata0a-4aa8-962e7a4",
+			"name": "Табачный киоск",
+			"icon": "images/categories/4b35-cata0a-4aa8-962e7a4.png"
 		}
 	],
 	"subcategories": [
@@ -17,8 +37,225 @@
 			"name": "Мягкие сыры",
 			"categoryId": "cdfa-catc97-4739-9274160",
 			"icon": ""
+		},
+		{
+			"id": "esub-category-4729-a9af904",
+			"name": "Свежая рыба",
+			"categoryId": "5e58-cate05-436b-b148241",
+			"icon": ""
+		},
+		{
+			"id": "2sub-category-48b8-bdeff09",
+			"name": "Для тела",
+			"categoryId": "d58c-cat0bc-4f4a-a154f8f",
+			"icon": ""
+		},
+		{
+			"id": "asub-category-402b-b7932f2",
+			"name": "Чистящие средства",
+			"categoryId": "d58c-cat0bc-4f4a-a154f8f",
+			"icon": ""
+		},
+		{
+			"id": "asub-category-44b8-8da528b",
+			"name": "Хлеб и булки",
+			"categoryId": "a272-cat3fe-4d9b-9d11a1b",
+			"icon": ""
+		},
+		{
+			"id": "0sub-category-487b-b396d77",
+			"name": "Корм для собак",
+			"categoryId": "b084-cat917-425a-a02b5a5",
+			"icon": ""
+		},
+		{
+			"id": "dsub-category-42c8-a75583c",
+			"name": "Корм для кошек",
+			"categoryId": "b084-cat917-425a-a02b5a5",
+			"icon": ""
+		},
+		{
+			"id": "1sub-category-4adb-b3eae84",
+			"name": "Жёлтые сыры",
+			"categoryId": "cdfa-catc97-4739-9274160",
+			"icon": ""
+		},
+		{
+			"id": "9sub-category-4b39-8399b33",
+			"name": "Табачный киоск",
+			"categoryId": "4b35-cata0a-4aa8-962e7a4",
+			"icon": ""
 		}
 	],
-	"products": [],
+	"products": [
+		{
+			"id": "1dbb-product-48da-a440d35",
+			"categoryId": "cdfa-catc97-4739-9274160",
+			"subcategoryId": "asub-category-415a-8e9abd6",
+			"crawlingId": "5171",
+			"name": "Коттедж Штраус 5%",
+			"price": 6.8,
+			"measureId": "piece",
+			"measureDefault": 4,
+			"visible": true,
+			"image": "images/products/1dbb-product-48da-a440d35.png"
+		},
+		{
+			"id": "fde0-product-4d4b-af24b2e",
+			"categoryId": "5e58-cate05-436b-b148241",
+			"subcategoryId": "esub-category-4729-a9af904",
+			"crawlingId": "2592",
+			"name": "Стейк из свежего лосося",
+			"price": 79,
+			"measureId": "kg",
+			"measureDefault": 1,
+			"visible": true,
+			"image": "images/products/fde0-product-4d4b-af24b2e.png"
+		},
+		{
+			"id": "58ec-product-4089-9e4ecf0",
+			"categoryId": "d58c-cat0bc-4f4a-a154f8f",
+			"subcategoryId": "2sub-category-48b8-bdeff09",
+			"crawlingId": "287913",
+			"name": "Туалетная бумага \"Soft\"",
+			"price": 39.9,
+			"measureId": "piece",
+			"measureDefault": 1,
+			"visible": true,
+			"image": "images/products/58ec-product-4089-9e4ecf0.png"
+		},
+		{
+			"id": "9f29-product-4c99-ba9e2e3",
+			"categoryId": "d58c-cat0bc-4f4a-a154f8f",
+			"subcategoryId": "asub-category-402b-b7932f2",
+			"crawlingId": "136424",
+			"name": "Стиральные таблетки \"Ariel\"",
+			"price": 21.9,
+			"measureId": "piece",
+			"measureDefault": 1,
+			"visible": true,
+			"image": "images/products/9f29-product-4c99-ba9e2e3.png"
+		},
+		{
+			"id": "96e5-product-4c28-91d9d87",
+			"categoryId": "d58c-cat0bc-4f4a-a154f8f",
+			"subcategoryId": "asub-category-402b-b7932f2",
+			"crawlingId": "509988",
+			"name": "Посудомоечные таблетки \"Finish\"",
+			"price": 44.9,
+			"measureId": "piece",
+			"measureDefault": 1,
+			"visible": true,
+			"image": "images/products/96e5-product-4c28-91d9d87.png"
+		},
+		{
+			"id": "f038-product-4e8a-89ef7c9",
+			"categoryId": "a272-cat3fe-4d9b-9d11a1b",
+			"subcategoryId": "asub-category-44b8-8da528b",
+			"crawlingId": "3109",
+			"name": "Тёмный хлеб \"Бармен\"",
+			"price": 8.3,
+			"measureId": "piece",
+			"measureDefault": 1,
+			"visible": true,
+			"image": "images/products/f038-product-4e8a-89ef7c9.png"
+		},
+		{
+			"id": "2898-product-404b-8eb0804",
+			"categoryId": "a272-cat3fe-4d9b-9d11a1b",
+			"subcategoryId": "asub-category-44b8-8da528b",
+			"crawlingId": "4945",
+			"name": "Упаковка из 5 плетеных булочек",
+			"price": 15,
+			"measureId": "piece",
+			"measureDefault": 1,
+			"visible": true,
+			"image": "images/products/2898-product-404b-8eb0804.png"
+		},
+		{
+			"id": "5a39-product-45ab-90582d7",
+			"categoryId": "b084-cat917-425a-a02b5a5",
+			"subcategoryId": "dsub-category-42c8-a75583c",
+			"crawlingId": "495820",
+			"name": "Супер Премио с лососем и рисом",
+			"price": 49.9,
+			"measureId": "piece",
+			"measureDefault": 1,
+			"visible": true,
+			"image": "images/products/5a39-product-45ab-90582d7.png"
+		},
+		{
+			"id": "de31-product-42da-85525b3",
+			"categoryId": "b084-cat917-425a-a02b5a5",
+			"subcategoryId": "dsub-category-42c8-a75583c",
+			"crawlingId": "495843",
+			"name": "Супер Премио с курицей",
+			"price": 49.9,
+			"measureId": "piece",
+			"measureDefault": 1,
+			"visible": true,
+			"image": "images/products/de31-product-42da-85525b3.png"
+		},
+		{
+			"id": "91b2-product-49c8-9850150",
+			"categoryId": "b084-cat917-425a-a02b5a5",
+			"subcategoryId": "0sub-category-487b-b396d77",
+			"crawlingId": "none",
+			"name": "Супер Премио с курицей 10 кг.",
+			"price": 149,
+			"measureId": "piece",
+			"measureDefault": 1,
+			"visible": true,
+			"image": "images/products/91b2-product-49c8-9850150.png"
+		},
+		{
+			"id": "365e-product-4c8b-9e194e5",
+			"categoryId": "b084-cat917-425a-a02b5a5",
+			"subcategoryId": "dsub-category-42c8-a75583c",
+			"crawlingId": "none",
+			"name": "Супер Премио с бараниной 10 кг",
+			"price": 149,
+			"measureId": "piece",
+			"measureDefault": 1,
+			"visible": true,
+			"image": "images/products/365e-product-4c8b-9e194e5.png"
+		},
+		{
+			"id": "6afd-product-4fca-84cbbe1",
+			"categoryId": "cdfa-catc97-4739-9274160",
+			"subcategoryId": "1sub-category-4adb-b3eae84",
+			"crawlingId": "114347",
+			"name": "Сыр Эмек",
+			"price": 5.11,
+			"measureId": "gram",
+			"measureDefault": 300,
+			"visible": true,
+			"image": "images/products/6afd-product-4fca-84cbbe1.png"
+		},
+		{
+			"id": "a304-product-48d9-856c7cc",
+			"categoryId": "cdfa-catc97-4739-9274160",
+			"subcategoryId": "1sub-category-4adb-b3eae84",
+			"crawlingId": "114348",
+			"name": "Сыр Гильбоа",
+			"price": 4.86,
+			"measureId": "gram",
+			"measureDefault": 300,
+			"visible": true,
+			"image": "images/products/a304-product-48d9-856c7cc.png"
+		},
+		{
+			"id": "e295-product-4dda-9ca79d7",
+			"categoryId": "4b35-cata0a-4aa8-962e7a4",
+			"subcategoryId": "9sub-category-4b39-8399b33",
+			"crawlingId": "none",
+			"name": "Табак",
+			"price": 90,
+			"measureId": "piece",
+			"measureDefault": 1,
+			"visible": true,
+			"image": "images/products/e295-product-4dda-9ca79d7.png"
+		}
+	],
 	"carts": []
 }

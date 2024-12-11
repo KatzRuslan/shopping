@@ -8,6 +8,10 @@ export class ProductsController {
     async getProducts() {
         return this._productsService.getProducts();
     }
+    @Get('crawling')
+    async startCrawling() {
+        return this._productsService.startCrawling();
+    }
     @Post()
     async postProduct(@Body() { product, base64 }) {
         return this._productsService.postProduct(product, base64);
@@ -16,8 +20,8 @@ export class ProductsController {
     async putProduct(@Param('id') id: string, @Body() { product, base64 }) {
         return this._productsService.putProduct(id, product, base64);
     }
-    @Delete()
-    async deleteProduct() {
-        return this._productsService.getProducts();
+    @Delete(':id')
+    async deleteProduct(@Param('id') id: string) {
+        return this._productsService.deleteProduct(id);
     }
 }
