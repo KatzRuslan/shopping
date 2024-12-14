@@ -15,7 +15,7 @@ async function bootstrap() {
     app.use(express.json({ limit: '10mb' }));
     app.use(express.urlencoded({ extended: true, limit: '10mb' }));
     app.enableCors();
-    const port = 3004; // process.env.PORT ?? 3000
+    const port = process.env.PORT ?? 3004;
     await app.listen(port);
     console.log(`Application is listening at ${port} port`);
 }
